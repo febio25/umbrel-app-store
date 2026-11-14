@@ -1,0 +1,29 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      # Format: <app-id>_<docker-service-name>_1
+      APP_HOST: tallynest-expenses_web_1
+      # Port the app listens on inside its container.
+      APP_PORT: 8080
+      # The app has its own login (two family members, 90-day sessions).
+      # Umbrel's login would force Nastia to know the Umbrel password and
+      # would sit in front of the installed phone app, so it is off.
+      PROXY_AUTH_ADD: "false"
+
+  web:
+    # Replace with the line printed by the "Release image" GitHub Action:
+    # tag + multi-arch digest, e.g. ghcr.io/febio25/home-expenses:0.3.1@sha256:...
+    image: ghcr.io/febio25/home-expenses:0.3.1@sha256:80543089451e7ea14fc664e15e1b1ed06304370b1d68532f79675cf17089da40    user: "1000:1000"
+    init: true
+    restart: on-failure
+    stop_grace_period: 30s
+    environment:
+      # "auto": the session cookie is Secure when the request arrives over
+      # HTTPS (Tailscale Serve), and still works when the app is opened over
+      # plain HTTP from the Umbrel dashboard.
+      SPESE_COOKIE_SECURE: "auto"
+    volumes:
+      # SQLite database (spese.db) and pre-restore copies.
+      - ${APP_DATA_DIR}/data:/data

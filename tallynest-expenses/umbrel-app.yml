@@ -1,0 +1,49 @@
+manifestVersion: 1
+id: tallynest-expenses
+storage:
+  dataRoot: data
+category: finance
+name: Spese di Casa
+version: "0.3.1"
+tagline: Le spese di famiglia, registrate dal telefono in pochi secondi
+icon: https://raw.githubusercontent.com/febio25/home-expenses/main/app/static/icons/icon-512.png
+description: >-
+  **Accesso:** l'app ha un proprio login, separato da quello di Umbrel. Al primo avvio chiede nome e password per le due persone di casa. Il login di Umbrel è disattivato per questa app, così chi la usa non deve conoscere la password di Umbrel.
+
+
+  **Installazione sul telefono:** per installarla come app da Chrome su Android serve un indirizzo HTTPS valido. Il README del progetto spiega come ottenerlo con Tailscale Serve.
+
+
+  Spese di Casa registra le spese di famiglia dal telefono: importo, esercente con suggerimenti, categoria e Salva. Data, chi ha pagato e metodo di pagamento hanno valori predefiniti e si cambiano con un tocco.
+
+
+  - Lista dei movimenti per mese, con modifica ed eliminazione
+
+  - Riepilogo mensile con totale per categoria
+
+  - Spese ricorrenti da confermare alla scadenza
+
+  - Export CSV per mese o intervallo, anche nel formato di Excel italiano
+
+  - Backup e ripristino dell'intero database dall'app
+
+
+  Nessuna chiamata esterna: niente CDN, font remoti o telemetria.
+releaseNotes: >-
+  Prima versione pubblicata. Rispetto ai test: la data segue il calendario anche se l'app resta aperta fino al giorno dopo, le liste si aggiornano al rientro nell'app, date future o precedenti al 2000 non sono accettate, riepilogo più leggibile.
+
+developer: febio25
+website: https://github.com/febio25/home-expenses
+dependencies: []
+repo: https://github.com/febio25/home-expenses
+support: https://github.com/febio25/home-expenses/issues
+
+port: 8395
+gallery: []
+path: ""
+
+defaultUsername: ""
+defaultPassword: ""
+
+submitter: febio25
+submission: https://github.com/febio25/umbrel-app-store

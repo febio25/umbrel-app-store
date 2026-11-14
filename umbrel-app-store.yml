@@ -1,0 +1,2 @@
+id: "tallynest" # Prefix of every app ID in this store. Only "a"-"z" and "-".
+name: "Tallynest" # Shown in umbrelOS as "Tallynest App Store".
