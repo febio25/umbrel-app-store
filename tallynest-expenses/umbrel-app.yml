@@ -4,7 +4,7 @@ storage:
   dataRoot: data
 category: finance
 name: Spese di Casa
-version: "0.8.0"
+version: "0.9.0"
 tagline: Le spese di famiglia, registrate dal telefono in pochi secondi
 icon: https://raw.githubusercontent.com/febio25/home-expenses/main/app/static/icons/icon-512.png
 description: >-
@@ -17,13 +17,13 @@ description: >-
   Spese di Casa registra le spese di famiglia dal telefono: importo, esercente con suggerimenti, categoria e Salva. Data, chi ha pagato e metodo di pagamento hanno valori predefiniti e si cambiano con un tocco.
 
 
-  - Lista dei movimenti per mese, con modifica ed eliminazione
+  - Lista dei movimenti per mese, con modifica ed eliminazione e ricerca in tutti i mesi
 
   - Entrate (stipendi, rimborsi, regali, vendite, buoni pasto) registrate a parte, con la differenza tra entrate e spese
 
   - Sezione Vinted: un articolo per ogni cosa messa in vendita, con foto, prezzo pagato, prezzo di vendita e guadagno, più il riepilogo del mese con vendite e spese Vinted
 
-  - Riepilogo mensile con totale per categoria, dettaglio delle spese di ogni categoria, entrate per categoria e istogramma degli ultimi 6 mesi
+  - Riepilogo mensile con totale per categoria, dettaglio delle spese di ogni categoria, entrate per categoria e istogramma degli ultimi 6 mesi; Esplora per i totali di un mese, un anno, 6 mesi o due date a scelta
 
   - Spese ed entrate ricorrenti (abbonamenti, bollette, stipendi) da confermare alla scadenza
 
@@ -34,7 +34,7 @@ description: >-
 
   Nessuna chiamata esterna: niente CDN, font remoti o telemetria.
 releaseNotes: >-
-  Nuova sezione Vinted nella barra in basso, al posto di Impostazioni, che ora si aprono dall'icona a ingranaggio in alto a destra, accanto al nome. Per ogni articolo messo in vendita, comprato per rivenderlo o già di casa: foto facoltativa (miniatura nella lista, tocco per vederla grande), prezzo pagato, prezzo di vendita e guadagno; i soldi restano normali spese ed entrate nella categoria Vinted. In Vinted → Riepilogo: vendite, spese Vinted e differenza del mese, guadagno sugli articoli venduti, istogramma degli ultimi 6 mesi e conteggio dell'anno rispetto alle soglie DAC7. All'aggiornamento la categoria di spesa «Vinted» già esistente diventa quella della sezione, con le sue spese, che si collegano agli articoli da «Nuovo articolo». Nuova categoria di entrata «Vinted», export CSV degli articoli e scorciatoia «Vinted» sull'icona dell'app. Le foto sono salvate nel database e quindi nel backup. Prima di aggiornare scarica un backup dall'app: un backup della 0.8.0 non si ripristina sulle versioni precedenti.
+  Ricerca nei Movimenti: la barra sotto «Spese | Entrate» cerca in tutti i mesi, senza badare a maiuscole e accenti, in esercente, nota, categoria, importo (per esempio 12,50) e titolo dell'articolo Vinted collegato; i risultati sono raggruppati per mese con totale e numero, e tornando indietro da una spesa aperta la ricerca resta. Esplora: dal link sotto l'istogramma del Riepilogo, i totali di un mese, di un anno, degli ultimi 6 mesi o di due date a scelta, con le frecce per spostarsi, entrate e spese a confronto e la differenza; c'è anche in Vinted → Riepilogo, con vendite, spese Vinted e guadagno sugli articoli venduti. In Nuovo articolo il campo «Dove l'hai comprato» suggerisce gli esercenti già usati, come in Nuova spesa. Nessuna modifica al database. Prima di aggiornare scarica un backup dall'app.
 
 developer: febio25
 website: https://github.com/febio25/home-expenses
