@@ -4,7 +4,7 @@ storage:
   dataRoot: data
 category: finance
 name: Spese di Casa
-version: "0.10.0"
+version: "0.11.0"
 tagline: Le spese di famiglia, registrate dal telefono in pochi secondi
 icon: https://raw.githubusercontent.com/febio25/home-expenses/main/app/static/icons/icon-512.png
 description: >-
@@ -23,7 +23,7 @@ description: >-
 
   - Sezione Vinted: un articolo per ogni cosa messa in vendita, con foto, prezzo pagato, prezzo di vendita e guadagno, gli articoli ancora da pubblicare e il riepilogo del mese con vendite e spese Vinted
 
-  - Annunci Vinted scritti con Claude, a mano: l'app prepara la richiesta con i dati e la foto dell'articolo e legge la risposta incollata, senza collegarsi a nessun servizio
+  - Annunci Vinted scritti con Claude, a mano, in tre passi: l'app prepara la richiesta con i dati dell'articolo, la passa all'app Claude con la foto e legge la risposta incollata, senza collegarsi a nessun servizio
 
   - Riepilogo mensile con totale per categoria, dettaglio delle spese di ogni categoria, entrate per categoria e istogramma degli ultimi 6 mesi; Esplora per i totali di un mese, un anno, 6 mesi o due date a scelta
 
@@ -31,12 +31,14 @@ description: >-
 
   - Export CSV di spese ed entrate per mese o intervallo e degli articoli Vinted, anche nel formato di Excel italiano
 
+  - Esercenti con ricerca e possibili doppioni da unire
+
   - Backup e ripristino dell'intero database dall'app
 
 
   Nessuna chiamata esterna: niente CDN, font remoti o telemetria.
 releaseNotes: >-
-  Vinted, da pubblicare: un articolo nuovo resta «Da pubblicare» finché non tocchi «Segna come pubblicato» nella sua scheda; «In vendita da …» conta da quel giorno e la data si corregge dal riquadro «Su Vinted». In cima alla lista quattro filtri a icona con il numero (da pubblicare, in vendita, venduti, tutti) e la ricerca guarda tutti gli articoli. Annunci con Claude: dettagli dell'articolo (tipo, marca, taglia, stato, misure, difetti; per i libri autore ed editore), «Condividi con Claude» con richiesta e foto, «Incolla risposta» che compila titolo, descrizione, prezzo e minimo, «Copia titolo» e «Copia descrizione» per Vinted, «Cambia prezzo» con lo storico dei prezzi. L'app non si collega a Claude né ad altri servizi. Gli articoli già inseriti restano in vendita con la loro data. Nel CSV degli articoli colonne nuove in coda. Il database viene aggiornato da solo al primo avvio; un backup della 0.10.0 non si ripristina sulle versioni precedenti. Prima di aggiornare scarica un backup dall'app.
+  Annunci Vinted rivisti: nella scheda dell'articolo il riquadro «Annuncio» va per passi (compila i dettagli, chiedi a Claude, incolla la risposta), poi mostra l'annuncio pronto da copiare su Vinted e, quando è in vendita, il prezzo in cima con «Cambia». «Condividi con Claude» con la foto copia la richiesta negli appunti e condivide solo la foto (in Claude tieni premuto nella chat e scegli «Incolla»); senza foto condivide il testo. La richiesta segue lo stile degli annunci di Nastia; nel README c'è la skill «annunci-vinted» da aggiungere al proprio account Claude. Il titolo dell'annuncio parte dal nome dell'articolo; in Nuovo articolo «Dove l'hai comprato» parte vuoto; tolto «Salva foto». Impostazioni → Esercenti: ricerca e possibili doppioni con «Unisci» e «Non sono doppioni». Il database viene aggiornato da solo al primo avvio; un backup della 0.11.0 non si ripristina sulle versioni precedenti. Prima di aggiornare scarica un backup dall'app.
 
 developer: febio25
 website: https://github.com/febio25/home-expenses
