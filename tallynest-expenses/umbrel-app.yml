@@ -4,7 +4,7 @@ storage:
   dataRoot: data
 category: finance
 name: Spese di Casa
-version: "0.9.0"
+version: "0.10.0"
 tagline: Le spese di famiglia, registrate dal telefono in pochi secondi
 icon: https://raw.githubusercontent.com/febio25/home-expenses/main/app/static/icons/icon-512.png
 description: >-
@@ -21,7 +21,9 @@ description: >-
 
   - Entrate (stipendi, rimborsi, regali, vendite, buoni pasto) registrate a parte, con la differenza tra entrate e spese
 
-  - Sezione Vinted: un articolo per ogni cosa messa in vendita, con foto, prezzo pagato, prezzo di vendita e guadagno, più il riepilogo del mese con vendite e spese Vinted
+  - Sezione Vinted: un articolo per ogni cosa messa in vendita, con foto, prezzo pagato, prezzo di vendita e guadagno, gli articoli ancora da pubblicare e il riepilogo del mese con vendite e spese Vinted
+
+  - Annunci Vinted scritti con Claude, a mano: l'app prepara la richiesta con i dati e la foto dell'articolo e legge la risposta incollata, senza collegarsi a nessun servizio
 
   - Riepilogo mensile con totale per categoria, dettaglio delle spese di ogni categoria, entrate per categoria e istogramma degli ultimi 6 mesi; Esplora per i totali di un mese, un anno, 6 mesi o due date a scelta
 
@@ -34,7 +36,7 @@ description: >-
 
   Nessuna chiamata esterna: niente CDN, font remoti o telemetria.
 releaseNotes: >-
-  Ricerca nei Movimenti: la barra sotto «Spese | Entrate» cerca in tutti i mesi, senza badare a maiuscole e accenti, in esercente, nota, categoria, importo (per esempio 12,50) e titolo dell'articolo Vinted collegato; i risultati sono raggruppati per mese con totale e numero, e tornando indietro da una spesa aperta la ricerca resta. Esplora: dal link sotto l'istogramma del Riepilogo, i totali di un mese, di un anno, degli ultimi 6 mesi o di due date a scelta, con le frecce per spostarsi, entrate e spese a confronto e la differenza; c'è anche in Vinted → Riepilogo, con vendite, spese Vinted e guadagno sugli articoli venduti. In Nuovo articolo il campo «Dove l'hai comprato» suggerisce gli esercenti già usati, come in Nuova spesa. Nessuna modifica al database. Prima di aggiornare scarica un backup dall'app.
+  Vinted, da pubblicare: un articolo nuovo resta «Da pubblicare» finché non tocchi «Segna come pubblicato» nella sua scheda; «In vendita da …» conta da quel giorno e la data si corregge dal riquadro «Su Vinted». In cima alla lista quattro filtri a icona con il numero (da pubblicare, in vendita, venduti, tutti) e la ricerca guarda tutti gli articoli. Annunci con Claude: dettagli dell'articolo (tipo, marca, taglia, stato, misure, difetti; per i libri autore ed editore), «Condividi con Claude» con richiesta e foto, «Incolla risposta» che compila titolo, descrizione, prezzo e minimo, «Copia titolo» e «Copia descrizione» per Vinted, «Cambia prezzo» con lo storico dei prezzi. L'app non si collega a Claude né ad altri servizi. Gli articoli già inseriti restano in vendita con la loro data. Nel CSV degli articoli colonne nuove in coda. Il database viene aggiornato da solo al primo avvio; un backup della 0.10.0 non si ripristina sulle versioni precedenti. Prima di aggiornare scarica un backup dall'app.
 
 developer: febio25
 website: https://github.com/febio25/home-expenses
