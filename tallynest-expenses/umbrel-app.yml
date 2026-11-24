@@ -4,7 +4,7 @@ storage:
   dataRoot: data
 category: finance
 name: Spese di Casa
-version: "0.11.0"
+version: "0.13.0"
 tagline: Le spese di famiglia, registrate dal telefono in pochi secondi
 icon: https://raw.githubusercontent.com/febio25/home-expenses/main/app/static/icons/icon-512.png
 description: >-
@@ -17,7 +17,7 @@ description: >-
   Spese di Casa registra le spese di famiglia dal telefono: importo, esercente con suggerimenti, categoria e Salva. Data, chi ha pagato e metodo di pagamento hanno valori predefiniti e si cambiano con un tocco.
 
 
-  - Lista dei movimenti per mese, con modifica ed eliminazione e ricerca in tutti i mesi
+  - Lista dei movimenti per mese, con modifica ed eliminazione e ricerca in tutti i mesi; le spese già note (domiciliazioni, bollette) si inseriscono in anticipo, fino a 12 mesi, con l'etichetta «Prevista»
 
   - Entrate (stipendi, rimborsi, regali, vendite, buoni pasto) registrate a parte, con la differenza tra entrate e spese
 
@@ -38,7 +38,7 @@ description: >-
 
   Nessuna chiamata esterna: niente CDN, font remoti o telemetria.
 releaseNotes: >-
-  Annunci Vinted rivisti: nella scheda dell'articolo il riquadro «Annuncio» va per passi (compila i dettagli, chiedi a Claude, incolla la risposta), poi mostra l'annuncio pronto da copiare su Vinted e, quando è in vendita, il prezzo in cima con «Cambia». «Condividi con Claude» con la foto copia la richiesta negli appunti e condivide solo la foto (in Claude tieni premuto nella chat e scegli «Incolla»); senza foto condivide il testo. La richiesta segue lo stile degli annunci di Nastia; nel README c'è la skill «annunci-vinted» da aggiungere al proprio account Claude. Il titolo dell'annuncio parte dal nome dell'articolo; in Nuovo articolo «Dove l'hai comprato» parte vuoto; tolto «Salva foto». Impostazioni → Esercenti: ricerca e possibili doppioni con «Unisci» e «Non sono doppioni». Il database viene aggiornato da solo al primo avvio; un backup della 0.11.0 non si ripristina sulle versioni precedenti. Prima di aggiornare scarica un backup dall'app.
+  Vinted: nel riquadro «Annuncio» di un articolo con l'annuncio già scritto, la riga «Dettagli dell'articolo» si apre con «Mostra» e fa rivedere tutti i dettagli (tipo, marca, taglia, stato, colore, misure, difetti, prezzi simili) con «Modifica dettagli», senza «Chiedi di nuovo». Con «Condividi con Claude» l'avviso «Richiesta copiata…» ora compare in alto, dove il menu Condividi del telefono non lo copre. Dalla 0.12.0, per chi arriva dalla 0.11.0: spese con data futura. In Nuova spesa, da «Cambia», una data fino a 12 mesi da oggi (domiciliazioni, bollette già note); la spesa conta subito nel suo mese e porta l'etichetta «Prevista» finché non arriva il giorno, e nei Movimenti e nel Riepilogo si può andare ai mesi successivi. Entrate, date di Vinted e registrazione delle ricorrenti restano «non dopo oggi»; Esplora conta fino a oggi. Se per la stessa spesa hai un modello ricorrente, alla scadenza tocca «Salta». Il database non cambia. Prima di aggiornare scarica un backup dall'app.
 
 developer: febio25
 website: https://github.com/febio25/home-expenses
