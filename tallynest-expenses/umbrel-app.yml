@@ -4,7 +4,7 @@ storage:
   dataRoot: data
 category: finance
 name: Spese di Casa
-version: "0.13.0"
+version: "0.14.0"
 tagline: Le spese di famiglia, registrate dal telefono in pochi secondi
 icon: https://raw.githubusercontent.com/febio25/home-expenses/main/app/static/icons/icon-512.png
 description: >-
@@ -33,12 +33,12 @@ description: >-
 
   - Esercenti con ricerca e possibili doppioni da unire
 
-  - Backup e ripristino dell'intero database dall'app
+  - Backup e ripristino dell'intero database dall'app, con copie automatiche giornaliere sull'Umbrel e l'export dei dati del mese pronti per Claude
 
 
   Nessuna chiamata esterna: niente CDN, font remoti o telemetria.
 releaseNotes: >-
-  Vinted: nel riquadro «Annuncio» di un articolo con l'annuncio già scritto, la riga «Dettagli dell'articolo» si apre con «Mostra» e fa rivedere tutti i dettagli (tipo, marca, taglia, stato, colore, misure, difetti, prezzi simili) con «Modifica dettagli», senza «Chiedi di nuovo». Con «Condividi con Claude» l'avviso «Richiesta copiata…» ora compare in alto, dove il menu Condividi del telefono non lo copre. Dalla 0.12.0, per chi arriva dalla 0.11.0: spese con data futura. In Nuova spesa, da «Cambia», una data fino a 12 mesi da oggi (domiciliazioni, bollette già note); la spesa conta subito nel suo mese e porta l'etichetta «Prevista» finché non arriva il giorno, e nei Movimenti e nel Riepilogo si può andare ai mesi successivi. Entrate, date di Vinted e registrazione delle ricorrenti restano «non dopo oggi»; Esplora conta fino a oggi. Se per la stessa spesa hai un modello ricorrente, alla scadenza tocca «Salta». Il database non cambia. Prima di aggiornare scarica un backup dall'app.
+  L'app si apre subito, anche con Tailscale lento o spento: utenti, categorie ed esercenti restano sul telefono e l'importo si può scrivere (per salvare serve comunque la connessione). Una spesa uguale a una già registrata (stesso importo, giorno ed esercente) si salva lo stesso, ma l'avviso diventa arancione: «sembra un doppione», con il solito «Annulla». La ricerca nei Movimenti mostra 100 risultati alla volta con «Mostra altre», con i totali sempre di tutti i risultati. Nel Riepilogo del mese le entrate ricorrenti non ancora registrate compaiono come «Attese» e la Differenza le conta. In Impostazioni: ordine delle categorie modificabile, data dell'ultimo backup scaricato, copie automatiche sull'Umbrel (una al giorno e prima di aggiornamenti e ripristini) con «Ripristina», ed export «Per Claude» che scarica i CSV del periodo e copia un testo con i totali di controllo. Esercenti suggeriti in base all'uso degli ultimi 90 giorni; nel CSV «Excel italiano» le note che iniziano con - + = @ non diventano formule. Il database non cambia. Prima di aggiornare scarica un backup dall'app.
 
 developer: febio25
 website: https://github.com/febio25/home-expenses
