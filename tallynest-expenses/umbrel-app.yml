@@ -4,7 +4,7 @@ storage:
   dataRoot: data
 category: finance
 name: Spese di Casa
-version: "0.14.0"
+version: "0.15.0"
 tagline: Le spese di famiglia, registrate dal telefono in pochi secondi
 icon: https://raw.githubusercontent.com/febio25/home-expenses/main/app/static/icons/icon-512.png
 description: >-
@@ -14,7 +14,7 @@ description: >-
   **Installazione sul telefono:** per installarla come app da Chrome su Android serve un indirizzo HTTPS valido. Il README del progetto spiega come ottenerlo con Tailscale Serve.
 
 
-  Spese di Casa registra le spese di famiglia dal telefono: importo, esercente con suggerimenti, categoria e Salva. Data, chi ha pagato e metodo di pagamento hanno valori predefiniti e si cambiano con un tocco.
+  Spese di Casa registra le spese di famiglia dal telefono: importo, esercente con suggerimenti, categoria (a icone, quattro per riga) e Salva. Data, chi ha pagato e metodo di pagamento hanno valori predefiniti e si cambiano con un tocco.
 
 
   - Lista dei movimenti per mese, con modifica ed eliminazione e ricerca in tutti i mesi; le spese già note (domiciliazioni, bollette) si inseriscono in anticipo, fino a 12 mesi, con l'etichetta «Prevista»
@@ -29,16 +29,16 @@ description: >-
 
   - Spese ed entrate ricorrenti (abbonamenti, bollette, stipendi) da confermare alla scadenza
 
-  - Export CSV di spese ed entrate per mese o intervallo e degli articoli Vinted, anche nel formato di Excel italiano
+  - Export CSV di spese ed entrate per mese o intervallo, degli articoli Vinted o di tutto insieme, anche nel formato di Excel italiano, da scaricare o da condividere dal telefono con un testo che riassume i totali
 
   - Esercenti con ricerca e possibili doppioni da unire
 
-  - Backup e ripristino dell'intero database dall'app, con copie automatiche giornaliere sull'Umbrel e l'export dei dati del mese pronti per Claude
+  - Backup e ripristino dell'intero database dall'app, con copie automatiche giornaliere sull'Umbrel
 
 
   Nessuna chiamata esterna: niente CDN, font remoti o telemetria.
 releaseNotes: >-
-  L'app si apre subito, anche con Tailscale lento o spento: utenti, categorie ed esercenti restano sul telefono e l'importo si può scrivere (per salvare serve comunque la connessione). Una spesa uguale a una già registrata (stesso importo, giorno ed esercente) si salva lo stesso, ma l'avviso diventa arancione: «sembra un doppione», con il solito «Annulla». La ricerca nei Movimenti mostra 100 risultati alla volta con «Mostra altre», con i totali sempre di tutti i risultati. Nel Riepilogo del mese le entrate ricorrenti non ancora registrate compaiono come «Attese» e la Differenza le conta. In Impostazioni: ordine delle categorie modificabile, data dell'ultimo backup scaricato, copie automatiche sull'Umbrel (una al giorno e prima di aggiornamenti e ripristini) con «Ripristina», ed export «Per Claude» che scarica i CSV del periodo e copia un testo con i totali di controllo. Esercenti suggeriti in base all'uso degli ultimi 90 giorni; nel CSV «Excel italiano» le note che iniziano con - + = @ non diventano formule. Il database non cambia. Prima di aggiornare scarica un backup dall'app.
+  Le categorie di spese ed entrate sono icone, quattro per riga. Il nome della categoria scelta è scritto accanto a «Categoria», compare per un attimo sopra l'icona (anche quando la sceglie un esercente già usato) e nel pulsante: «Salva in Ristoranti e bar». Anche l'esercente scelto si colora; toccandolo di nuovo si toglie. In Impostazioni → Categorie ogni categoria ha «Modifica», con nome, icona (58 a scelta) e «Disattiva». Le dieci categorie iniziali e Vinted hanno già la loro icona; quelle create o rinominate da voi mostrano un'icona generica finché non ne scegliete una. In Impostazioni → Esporta CSV ogni export ha «Scarica» e, dal telefono, «Condividi», che copia il testo con i totali e apre il menu di Android con i file; «Per Claude» diventa «Tutto» (spese, entrate e articoli Vinted). Il database cambia: l'app ne salva prima una copia, e un backup della 0.15.0 non si ripristina sulla 0.14.0. Prima di aggiornare scarica un backup dall'app.
 
 developer: febio25
 website: https://github.com/febio25/home-expenses
