@@ -4,7 +4,7 @@ storage:
   dataRoot: data
 category: finance
 name: Spese di Casa
-version: "0.15.0"
+version: "0.16.0"
 tagline: Le spese di famiglia, registrate dal telefono in pochi secondi
 icon: https://raw.githubusercontent.com/febio25/home-expenses/main/app/static/icons/icon-512.png
 description: >-
@@ -19,7 +19,7 @@ description: >-
 
   - Lista dei movimenti per mese, con modifica ed eliminazione e ricerca in tutti i mesi; le spese già note (domiciliazioni, bollette) si inseriscono in anticipo, fino a 12 mesi, con l'etichetta «Prevista»
 
-  - Entrate (stipendi, rimborsi, regali, vendite, buoni pasto) registrate a parte, con la differenza tra entrate e spese
+  - Il mese delle spese come uno scontrino, giorno per giorno con il subtotale; le entrate impaginate come una busta paga (stipendi, buoni pasto, vendite, rimborsi, regali), con la differenza tra entrate e spese
 
   - Sezione Vinted: un articolo per ogni cosa messa in vendita, con foto, prezzo pagato, prezzo di vendita e guadagno, gli articoli ancora da pubblicare e il riepilogo del mese con vendite e spese Vinted
 
@@ -38,7 +38,7 @@ description: >-
 
   Nessuna chiamata esterna: niente CDN, font remoti o telemetria.
 releaseNotes: >-
-  Le categorie di spese ed entrate sono icone, quattro per riga. Il nome della categoria scelta è scritto accanto a «Categoria», compare per un attimo sopra l'icona (anche quando la sceglie un esercente già usato) e nel pulsante: «Salva in Ristoranti e bar». Anche l'esercente scelto si colora; toccandolo di nuovo si toglie. In Impostazioni → Categorie ogni categoria ha «Modifica», con nome, icona (58 a scelta) e «Disattiva». Le dieci categorie iniziali e Vinted hanno già la loro icona; quelle create o rinominate da voi mostrano un'icona generica finché non ne scegliete una. In Impostazioni → Esporta CSV ogni export ha «Scarica» e, dal telefono, «Condividi», che copia il testo con i totali e apre il menu di Android con i file; «Per Claude» diventa «Tutto» (spese, entrate e articoli Vinted). Il database cambia: l'app ne salva prima una copia, e un backup della 0.15.0 non si ripristina sulla 0.14.0. Prima di aggiornare scarica un backup dall'app.
+  Revisione grafica, senza cambiamenti al database. In Movimenti il mese è uno scontrino: una striscia sola con il bordo strappato, ogni giorno tra due tratteggi e chiuso dal suo «Subtotale»; lo stesso per le spese di una categoria e per la ricerca. Le entrate sono impaginate come una busta paga: periodo, numero di entrate e ricorrenti attese, tabella Data | Voce | Importo, totale in un riquadro e parte in buoni pasto. Le categorie delle entrate sono nell'ordine Stipendio, Buoni pasto, Vinted, Rimborsi, Regali, Vendite, Altro; Vinted ha l'etichetta della barra in basso, Vendite banconota e moneta. Nella scheda di un articolo Vinted, accanto alla foto, il titolo (fino a quattro righe, toccandolo si rinomina) e i prezzi; la matita sulla foto la cambia o la toglie; lo stato è accanto a «Su Vinted»; nei passi dell'annuncio il numero sta accanto al titolo. «Da pubblicare» ha la clessidra. Riepilogo con anello e categorie in un solo riquadro, Impostazioni in un elenco unico, promemoria delle ricorrenti in giallo chiaro, testi meno in grassetto e simbolo € più piccolo nei totali. Si può tornare alla 0.15.0 senza perdere nulla.
 
 developer: febio25
 website: https://github.com/febio25/home-expenses
