@@ -4,7 +4,7 @@ storage:
   dataRoot: data
 category: finance
 name: Spese di Casa
-version: "0.16.0"
+version: "0.17.0"
 tagline: Le spese di famiglia, registrate dal telefono in pochi secondi
 icon: https://raw.githubusercontent.com/febio25/home-expenses/main/app/static/icons/icon-512.png
 description: >-
@@ -27,7 +27,7 @@ description: >-
 
   - Riepilogo mensile con totale per categoria, dettaglio delle spese di ogni categoria, entrate per categoria e istogramma degli ultimi 6 mesi; Esplora per i totali di un mese, un anno, 6 mesi o due date a scelta
 
-  - Spese ed entrate ricorrenti (abbonamenti, bollette, stipendi) da confermare alla scadenza
+  - Spese ed entrate ricorrenti (abbonamenti, bollette, stipendi) da confermare alla scadenza, anche con importo variabile, e quanto costano al mese e all'anno
 
   - Export CSV di spese ed entrate per mese o intervallo, degli articoli Vinted o di tutto insieme, anche nel formato di Excel italiano, da scaricare o da condividere dal telefono con un testo che riassume i totali
 
@@ -38,7 +38,7 @@ description: >-
 
   Nessuna chiamata esterna: niente CDN, font remoti o telemetria.
 releaseNotes: >-
-  Revisione grafica, senza cambiamenti al database. In Movimenti il mese è uno scontrino: una striscia sola con il bordo strappato, ogni giorno tra due tratteggi e chiuso dal suo «Subtotale»; lo stesso per le spese di una categoria e per la ricerca. Le entrate sono impaginate come una busta paga: periodo, numero di entrate e ricorrenti attese, tabella Data | Voce | Importo, totale in un riquadro e parte in buoni pasto. Le categorie delle entrate sono nell'ordine Stipendio, Buoni pasto, Vinted, Rimborsi, Regali, Vendite, Altro; Vinted ha l'etichetta della barra in basso, Vendite banconota e moneta. Nella scheda di un articolo Vinted, accanto alla foto, il titolo (fino a quattro righe, toccandolo si rinomina) e i prezzi; la matita sulla foto la cambia o la toglie; lo stato è accanto a «Su Vinted»; nei passi dell'annuncio il numero sta accanto al titolo. «Da pubblicare» ha la clessidra. Riepilogo con anello e categorie in un solo riquadro, Impostazioni in un elenco unico, promemoria delle ricorrenti in giallo chiaro, testi meno in grassetto e simbolo € più piccolo nei totali. Si può tornare alla 0.15.0 senza perdere nulla.
+  Ricorrenti più chiare. In cima alla pagina il riquadro «Quanto costano» somma spese ed entrate ricorrenti attive al mese e all'anno: una spesa ogni 2 mesi conta per metà al mese, una annuale per un dodicesimo. Spese ed entrate ricorrenti possono avere l'importo variabile (bollette, stipendio con straordinari): l'importo compare con «circa» e i totali con «~», e alla scadenza si corregge. Le scadenze sono scritte come «Scaduta 3 giorni fa», «Scade oggi» o «domani»; si aggiunge la frequenza ogni 4 mesi. Il database viene aggiornato (schema 10): prima di farlo l'app salva da sola una copia nella cartella snapshots. Scarica comunque un backup prima di aggiornare. Si può tornare alla 0.16.0, che funziona sul database aggiornato, ma un backup fatto con la 0.17.0 non si ripristina sulla 0.16.0.
 
 developer: febio25
 website: https://github.com/febio25/home-expenses
