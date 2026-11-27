@@ -4,7 +4,7 @@ storage:
   dataRoot: data
 category: finance
 name: Spese di Casa
-version: "0.18.1"
+version: "0.19.0"
 tagline: Le spese di famiglia, registrate dal telefono in pochi secondi
 icon: https://raw.githubusercontent.com/febio25/home-expenses/main/app/static/icons/icon-512.png
 description: >-
@@ -21,7 +21,7 @@ description: >-
 
   - Il mese delle spese come uno scontrino, giorno per giorno con il subtotale; le entrate impaginate come una busta paga (stipendi, buoni pasto, vendite, rimborsi, regali), con la differenza tra entrate e spese
 
-  - Sezione Vinted: un articolo per ogni cosa messa in vendita, con foto, prezzo pagato, prezzo di vendita e guadagno, gli articoli ancora da pubblicare e il riepilogo del mese con vendite e spese Vinted
+  - Sezione Vinted: un articolo per ogni cosa messa in vendita, con foto, prezzo pagato, prezzo di vendita e guadagno, gli articoli ancora da pubblicare e il riepilogo del mese con vendite e spese Vinted, e il ribasso a scalini proposto quando un articolo resta invenduto
 
   - Annunci Vinted scritti con Claude, a mano, in tre passi: l'app prepara la richiesta con i dati dell'articolo, la passa all'app Claude con la foto e legge la risposta incollata, senza collegarsi a nessun servizio
 
@@ -38,7 +38,7 @@ description: >-
 
   Nessuna chiamata esterna: niente CDN, font remoti o telemetria.
 releaseNotes: >-
-  Ritocchi grafici, senza cambiamenti al database. Nel calendario numeri più grandi, importi con € (e 1,2k € dalle migliaia), ogni giorno nella sua casella su quattro toni di verde e i giorni dei mesi vicini in grigio tratteggiato: toccandone uno si passa a quel mese. Nella lente un giorno con una sola spesa non ripete l'importo nel subtotale. Nel Riepilogo il numero di entrate e spese è sulla riga della voce, più leggibile. In Vinted la ricerca si apre dalla lente in alto e non copre più le quattro icone; il Riepilogo Vinted è un bilancio come quello di casa, con acquisti ed extra, istogramma ed Esplora. Si può tornare alla 0.18.0 senza perdere nulla.
+  Ribasso a scalini per gli articoli Vinted. Se un articolo resta invenduto, l'app propone di abbassarne il prezzo un gradino alla volta (piano base: 10% ogni 14 giorni dalla pubblicazione), arrotondato al mezzo euro e mai sotto il minimo; il prezzo non cambia mai da solo. Ogni articolo può avere un piano suo, proposto da Claude nella risposta dell'annuncio o scritto a mano. In cima alla lista Vinted compare «N articoli da ribassare»; nella scheda «Ribassa a X €», «Salta» o «Altro prezzo», e al minimo da un giro «Rivaluta con Claude», «Ritira» o «Lascia così». Il database passa allo schema 11 (prima l'app ne salva una copia); la 0.18.1 funziona anche sul database nuovo. Aggiornare la skill «annunci-vinted» su claude.ai.
 
 developer: febio25
 website: https://github.com/febio25/home-expenses
