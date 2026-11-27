@@ -4,7 +4,7 @@ storage:
   dataRoot: data
 category: finance
 name: Spese di Casa
-version: "0.18.0"
+version: "0.18.1"
 tagline: Le spese di famiglia, registrate dal telefono in pochi secondi
 icon: https://raw.githubusercontent.com/febio25/home-expenses/main/app/static/icons/icon-512.png
 description: >-
@@ -38,7 +38,7 @@ description: >-
 
   Nessuna chiamata esterna: niente CDN, font remoti o telemetria.
 releaseNotes: >-
-  Movimenti e Riepilogo nuovi, senza cambiamenti al database. Movimenti → Spese si apre sul calendario del mese, con il totale di ogni giorno e le spese previste in grigio; il giorno toccato si apre sotto come scontrino, e da un giorno vuoto si aggiunge una spesa con quella data. La lente accanto al totale mostra il mese intero, la ricerca e i filtri a pillole: categoria, chi ha pagato, metodo, periodo ed etichetta. Le etichette sono parole con # nella nota (#vacanze): diventano pillole sotto la spesa, toccandole si vedono tutte le spese con quell'etichetta e il totale, e scrivendo # l'app propone quelle già usate. Il Riepilogo comincia con il bilancio del mese (entrate, spese, differenza finora, entrate attese, a fine mese), poi l'istogramma di 6 mesi (un tocco su un mese mostra quel mese) e Spese | Entrate per categoria; una categoria di entrata apre la busta paga con le sue righe evidenziate. Esplora conta anche le spese previste. Si può tornare alla 0.17.0 senza perdere nulla.
+  Ritocchi grafici, senza cambiamenti al database. Nel calendario numeri più grandi, importi con € (e 1,2k € dalle migliaia), ogni giorno nella sua casella su quattro toni di verde e i giorni dei mesi vicini in grigio tratteggiato: toccandone uno si passa a quel mese. Nella lente un giorno con una sola spesa non ripete l'importo nel subtotale. Nel Riepilogo il numero di entrate e spese è sulla riga della voce, più leggibile. In Vinted la ricerca si apre dalla lente in alto e non copre più le quattro icone; il Riepilogo Vinted è un bilancio come quello di casa, con acquisti ed extra, istogramma ed Esplora. Si può tornare alla 0.18.0 senza perdere nulla.
 
 developer: febio25
 website: https://github.com/febio25/home-expenses
