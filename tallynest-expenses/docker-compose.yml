@@ -15,7 +15,7 @@ services:
   web:
     # Replace with the line printed by the "Release image" GitHub Action:
     # tag + multi-arch digest, e.g. ghcr.io/febio25/home-expenses:0.3.1@sha256:...
-    image: ghcr.io/febio25/home-expenses:0.17.0@sha256:02c4bfd293d9fa569ae0ef7761880dd21749352b29bcb5479eadc46a7e0389c7
+    image: ghcr.io/febio25/home-expenses:0.18.0@sha256:a0abaf414bba29dc666132c6e62ab255bc464903d5514c604df8da9a2f20a2c5
     user: "1000:1000"
     init: true
     restart: on-failure

@@ -4,7 +4,7 @@ storage:
   dataRoot: data
 category: finance
 name: Spese di Casa
-version: "0.17.0"
+version: "0.18.0"
 tagline: Le spese di famiglia, registrate dal telefono in pochi secondi
 icon: https://raw.githubusercontent.com/febio25/home-expenses/main/app/static/icons/icon-512.png
 description: >-
@@ -17,7 +17,7 @@ description: >-
   Spese di Casa registra le spese di famiglia dal telefono: importo, esercente con suggerimenti, categoria (a icone, quattro per riga) e Salva. Data, chi ha pagato e metodo di pagamento hanno valori predefiniti e si cambiano con un tocco.
 
 
-  - Lista dei movimenti per mese, con modifica ed eliminazione e ricerca in tutti i mesi; le spese già note (domiciliazioni, bollette) si inseriscono in anticipo, fino a 12 mesi, con l'etichetta «Prevista»
+  - Movimenti con il calendario del mese (il totale di ogni giorno) e la lente per la lista, la ricerca in tutti i mesi e i filtri per categoria, chi ha pagato, metodo, periodo ed etichetta (#parola nella nota); le spese già note (domiciliazioni, bollette) si inseriscono in anticipo, fino a 12 mesi, con l'etichetta «Prevista»
 
   - Il mese delle spese come uno scontrino, giorno per giorno con il subtotale; le entrate impaginate come una busta paga (stipendi, buoni pasto, vendite, rimborsi, regali), con la differenza tra entrate e spese
 
@@ -25,7 +25,7 @@ description: >-
 
   - Annunci Vinted scritti con Claude, a mano, in tre passi: l'app prepara la richiesta con i dati dell'articolo, la passa all'app Claude con la foto e legge la risposta incollata, senza collegarsi a nessun servizio
 
-  - Riepilogo mensile con totale per categoria, dettaglio delle spese di ogni categoria, entrate per categoria e istogramma degli ultimi 6 mesi; Esplora per i totali di un mese, un anno, 6 mesi o due date a scelta
+  - Riepilogo mensile con il bilancio del mese (entrate, spese, differenza, entrate attese e a fine mese), istogramma di 6 mesi, spese ed entrate per categoria; Esplora per i totali di un mese, un anno, 6 mesi o due date a scelta, spese previste comprese
 
   - Spese ed entrate ricorrenti (abbonamenti, bollette, stipendi) da confermare alla scadenza, anche con importo variabile, e quanto costano al mese e all'anno
 
@@ -38,7 +38,7 @@ description: >-
 
   Nessuna chiamata esterna: niente CDN, font remoti o telemetria.
 releaseNotes: >-
-  Ricorrenti più chiare. In cima alla pagina il riquadro «Quanto costano» somma spese ed entrate ricorrenti attive al mese e all'anno: una spesa ogni 2 mesi conta per metà al mese, una annuale per un dodicesimo. Spese ed entrate ricorrenti possono avere l'importo variabile (bollette, stipendio con straordinari): l'importo compare con «circa» e i totali con «~», e alla scadenza si corregge. Le scadenze sono scritte come «Scaduta 3 giorni fa», «Scade oggi» o «domani»; si aggiunge la frequenza ogni 4 mesi. Il database viene aggiornato (schema 10): prima di farlo l'app salva da sola una copia nella cartella snapshots. Scarica comunque un backup prima di aggiornare. Si può tornare alla 0.16.0, che funziona sul database aggiornato, ma un backup fatto con la 0.17.0 non si ripristina sulla 0.16.0.
+  Movimenti e Riepilogo nuovi, senza cambiamenti al database. Movimenti → Spese si apre sul calendario del mese, con il totale di ogni giorno e le spese previste in grigio; il giorno toccato si apre sotto come scontrino, e da un giorno vuoto si aggiunge una spesa con quella data. La lente accanto al totale mostra il mese intero, la ricerca e i filtri a pillole: categoria, chi ha pagato, metodo, periodo ed etichetta. Le etichette sono parole con # nella nota (#vacanze): diventano pillole sotto la spesa, toccandole si vedono tutte le spese con quell'etichetta e il totale, e scrivendo # l'app propone quelle già usate. Il Riepilogo comincia con il bilancio del mese (entrate, spese, differenza finora, entrate attese, a fine mese), poi l'istogramma di 6 mesi (un tocco su un mese mostra quel mese) e Spese | Entrate per categoria; una categoria di entrata apre la busta paga con le sue righe evidenziate. Esplora conta anche le spese previste. Si può tornare alla 0.17.0 senza perdere nulla.
 
 developer: febio25
 website: https://github.com/febio25/home-expenses
